@@ -9,7 +9,15 @@ body {
 
 h1 {
     color: rgb(216, 209, 209);
+    /*border-width: 5px;*/
+    /*border-color: blue;*/
+    /*border-style: solid;*/
     text-align: center;
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
 }
 
 /*Estilos de la galeria*/
@@ -28,6 +36,10 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover; /*para que no se distorciones*/
+    transition: all 300ms; /*Para que las transiciones sean sutiles*/
+}
+.gallery__img:hover {      /*Se programa el efecto hover*/
+    transform: scale(1.02);
 }
 .gallery__title {
     position:absolute;
